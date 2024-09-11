@@ -40,7 +40,8 @@ nav a {
   color: black;
   margin: 0 15px;
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 nav a:hover {
@@ -49,6 +50,7 @@ nav a:hover {
 
 .header--name {
   padding-right: 105rem;
+  font-size: 3rem;
 }
 
 .header--pfpic {
@@ -67,6 +69,17 @@ nav a:hover {
   position: relative;
   z-index: 0;
 }
+
+.home--title{
+  font-size: 5rem;
+}
+
+.home-txt{
+  width: 101rem;
+  height: 10rem;
+  font-weight: 300;
+}
+
 
 .home-background::before {
   content: "";
@@ -216,9 +229,10 @@ nav a:hover {
   position: absolute;
   left: 46%;
   top: 105%;
-  border: #cc33ff;
-  border-style: outset;
+  /* border: #cc33ff;
+  border-style: outset; */
   border-radius: 1rem;
+  font-size: 5rem;
 }
 
 .personel-info{
@@ -299,7 +313,12 @@ nav a:hover {
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
   transform: rotateY(180deg);
+}
+
+
+
+.projecten{
+  width: 100%;
+  height: 90rem;
 }
