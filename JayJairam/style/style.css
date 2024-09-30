@@ -1,8 +1,19 @@
 /* Media Queries */
-@media (min-width: 320px) { /* mq-xs */ }
-@media (min-width: 480px) { /* mq-sm */ }
-@media (min-width: 720px) { /* mq-md */ }
-@media (min-width: 1000px) { /* mq-lg */ }
+@media (min-width: 320px) {
+  /* mq-xs */
+}
+
+@media (min-width: 480px) {
+  /* mq-sm */
+}
+
+@media (min-width: 720px) {
+  /* mq-md */
+}
+
+@media (min-width: 1000px) {
+  /* mq-lg */
+}
 
 /* Variables */
 :root {
@@ -10,7 +21,8 @@
   --box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
   --border: 1px solid rgba(191, 191, 191, 0.4);
   --items: 5;
-  --rows: 3; /* ceil(5/2) */
+  --rows: 3;
+  /* ceil(5/2) */
   --card-height: 400px;
   --card-width: 450px;
   --inner-margin: 15px;
@@ -107,11 +119,11 @@ nav a:hover {
   z-index: 0;
 }
 
-.home--title{
+.home--title {
   font-size: 5rem;
 }
 
-.home-txt{
+.home-txt {
   width: 101rem;
   height: 10rem;
   font-weight: 300;
@@ -179,7 +191,7 @@ nav a:hover {
 
 
 
-.home-contacten{
+.home-contacten {
   width: 10rem;
   height: 10rem;
   background: red;
@@ -252,6 +264,24 @@ nav a:hover {
   }
 }
 
+.boxexample {
+  position: absolute;
+  top: 200px;
+  width: 13rem;
+  height: 40rem;
+  background: #e6e6e6;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border:  #f2f2f2 10px double;
+  background-clip: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
 /* ------------------------------------------------------------- */
 .AboutMe {
   width: 100%;
@@ -263,13 +293,13 @@ nav a:hover {
   padding-top: 20rem;
 }
 
-.skills{
+.skills {
   width: 80rem;
   height: 60rem;
   border-radius: 2rem;
 }
 
-.AboutMe--title{
+.AboutMe--title {
   position: absolute;
   left: 46%;
   top: 105%;
@@ -279,7 +309,7 @@ nav a:hover {
   font-size: 5rem;
 }
 
-.personel-info{
+.personel-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +319,7 @@ nav a:hover {
   font-weight: 300;
 }
 
-.AboutMe--button{
+.AboutMe--button {
   background-color: #cc33ff;
   color: white;
   border: none;
@@ -319,16 +349,16 @@ nav a:hover {
 
 .flipcards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  justify-content: center; 
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
 
 .flip-card {
   background-color: transparent;
-  width: 100%; 
-  max-width: 300px; 
-  height: 200px; 
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -347,11 +377,12 @@ nav a:hover {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -682,6 +713,8 @@ nav a:hover {
   border: var(--border);
   border-top: 0;
   padding: var(--inner-margin);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 1000px) {
@@ -806,8 +839,3 @@ nav a:hover {
 .contact-method li a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
