@@ -19,15 +19,15 @@
         <img class="header--pfpic" src="img/pfpics porto.jpg" alt="">
         <h1 class="header--name">Jainarain</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Over mij</a>
-            <a href="#">Projecten</a>
-            <a href="#">Contact</a>
+            <a href="#section1">Home</a>
+            <a href="#section2">Over mij</a>
+            <a href="#section3">Projecten</a>
+            <a href="#section4">Contact</a>
         </nav>
     </header>
 
     <div class="home-background">
-        <section class="home">
+        <section id="section1" class="home">
             <h2 class="home--title">Welkom.</h2>
             <div class="home-txt">
                 <p>
@@ -38,17 +38,16 @@
                 </p>
             </div>
 
-            <button class="home--button">Projecten</button>
+            <a href="#section3"><button class="home--button">Projecten</button></a>
 
             <div class="scroll-indicator">
                 <span>Scroll Down</span>
                 <div class="ball"></div>
             </div>
-
         </section>
     </div>
 
-    <section class="AboutMe">
+    <section id="section2" class="AboutMe">
         <h2 class="AboutMe--title">Over Mij</h2>
         <div class="skills personel-info">
             <p>Hallo, ik ben Jay Jairam,
@@ -62,7 +61,7 @@
                 responsieve website of het schrijven van efficiënte code,
                 ik geniet ervan om ideeën tot leven te brengen in de digitale wereld.
             </p>
-            <button class="AboutMe--button">Contact mij!</button>
+            <a href="#section4"><button class="AboutMe--button">Contact mij!</button></a>
         </div>
 
         <div class="skills flipcards">
@@ -139,10 +138,10 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="img/logo/25231.png" alt="Avatar" style="width:50%;height:50%;">
+                        <img src="/img/logo/react.png" alt="Avatar" style="width:50%;height:50%;">
                     </div>
                     <div class="flip-card-back">
-                        <div class="progress-circle circle-8"><span>100%</span></div>
+                        <div class="progress-circle circle-8"><span>50%</span></div>
                     </div>
                 </div>
             </div>
@@ -159,57 +158,113 @@
         </div>
     </section>
 
-    <section class="projecten">
-        <h2 class="projecten--title">Projecten</h2>
-        <figure class="projecten--box">
-            <img src="img/projectenimg/pcparts.png" alt="">
-            <p>
-                Dit website is ontwikkeld met behulp van HTML, 
-                CSS en JavaScript. 
-                Ik heb deze website volledig zelf vervaardigd. 
-                De website is gericht op de verkoop van pc-onderdelen.
-            </p>
-            <a class="projecten-button" href="https://35229.hosts2.ma-cloud.nl/Pcpartsgo/" target="_blank" rel="noopener noreferrer">Neem kijkje!</a>
-        </figure>
+    <section id=timeline>
+        <h1>Projects 2022-2024</h1>
+        <p class="leader">Dit zijn de projecten die ik afgelopen jaren heb gemaakt en op het Media College, </p>
+        <div class="demo-card-wrapper">
+            <div class="demo-card demo-card--step1">
+                <div class="head">
+                    <div class="number-box">
+                        <span>01</span>
+                    </div>
+                    <h2> Japan museum</h2>
+                </div>
+                <div class="body">
+                    <p>Dit website is ontwikkeld met HTML en CSS,
+                        waarbij de nadruk voornamelijk lag op het gebruik van CSS.
+                        Deze website, die ik volledig zelf heb ontworpen en gerealiseerd,
+                        richt zich op de Japanse cultuur.
+                        <a href="https://35229.hosts2.ma-cloud.nl/Landingpage/" target="_blank">Bezoek</a>
+                        <a href="https://github.com/JayJairam/Front-end-Skills" target="_blank">Github</a>
+                    </p>
+                    <img src="img/projectenimg/japanmusea.png" alt="Graphic">
+                </div>
+            </div>
 
-        <figure class="projecten--box">
-            <img src="img/projectenimg/japanmusea.png" alt="">
-            <p>Dit website is ontwikkeld met HTML en CSS, waarbij de nadruk voornamelijk lag op het gebruik van CSS. 
-                Deze website, 
-                die ik volledig zelf heb ontworpen en gerealiseerd, 
-                richt zich op de Japanse cultuur.
-            </p>
-            <a class="projecten-button" href= "https://35229.hosts2.ma-cloud.nl/Landingpage/" target="_blank" rel="noopener noreferrer">Neem kijkje!</a>
-        </figure>
+            <div class="demo-card demo-card--step2">
+                <div class="head">
+                    <div class="number-box">
+                        <span>02</span>
+                    </div>
+                    <h2> Blog-web</h2>
+                </div>
+                <div class="body">
+                    <p>Deze website is een blog over games en is ontwikkeld met HTML,
+                        CSS en JavaScript. De website is volledig door mijzelf ontworpen en gerealiseerd.
+                        <a href="https://35229.hosts2.ma-cloud.nl/Blog/" target="_blank">Bezoek</a>
+                        <a href="https://github.com/JayJairam/Front-end-Skills" target="_blank">Github</a>
+                    </p>
+                    <img src="img/projectenimg/blog.png" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step3">
+                <div class="head">
+                    <div class="number-box">
+                        <span>03</span>
+                    </div>
+                    <h2>Pcpartsgo</h2>
+                </div>
+                <div class="body">
+                    <p>Dit website is ontwikkeld met behulp van HTML, CSS en JavaScript.
+                        Ik heb deze website volledig zelf ontwikkeld.
+                        De website is gericht op de verkoop van pc-onderdelen.
+                        <a href="https://35229.hosts2.ma-cloud.nl/Pcpartsgo/" target="_blank">Bezoek</a>
+                        <a href="https://github.com/JayJairam/webshop" target="_blank">Github</a>
+                    </p>
+                    <img src="img/projectenimg/pcparts.png" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step4">
+                <div class="head">
+                    <div class="number-box">
+                        <span>04</span>
+                    </div>
+                    <h2>Social media-feed</h2>
+                </div>
+                <div class="body">
+                    <p>Dit website is ontwikkeld met behulp van HTML, CSS en JavaScript.
+                        Al de post van de website worden opgehaald via een json file.
+                        Bij deze opdracht was het niet belangerijk om de stijl van de web maar om de functioneleteiten.
+                        <a href="https://35229.hosts2.ma-cloud.nl/socialmediaweb/" target="_blank">Bezoek</a>
+                        <a href="https://github.com/JayJairam/Jitter" target="_blank">Github</a>
+                    </p>
+                    <img src="img/projectenimg/jitter.png" alt="Graphic">
+                </div>
+            </div>
+
+            <div class="demo-card demo-card--step5">
+                <div class="head">
+                    <div class="number-box">
+                        <span>05</span>
+                    </div>
+                    <h2>Muse Project</h2>
+                </div>
+                <div class="body">
+                    <p>Deze website is ontwikkeld door een team en maakt gebruik van HTML,
+                        SCSS en JavaScript. Het project omvat WebVR-technologie,
+                        wat de ervaring naar een hoger niveau tilt.
+                        Deze website heeft een week in een museum tentoongesteld gestaan.
+                        <a href="https://35229.hosts2.ma-cloud.nl/museweb/index.html" target="_blank">Bezoek</a>
+                        <a href="https://github.com/seanras02/MUSE" target="_blank">Github</a>
+                    </p>
+                    <img src="img/projectenimg/muse.png" alt="Graphic">
+                </div>
+            </div>
 
 
-        <figure class="projecten--box">
-            <img src="img/projectenimg/blog.png" alt="">
-            <p>Deze website is een blog over games en is ontwikkeld met HTML, 
-                CSS en JavaScript. De website is volledig door mijzelf ontworpen en gerealiseerd.
-            </p>
-            <a class="projecten-button" href="https://35229.hosts2.ma-cloud.nl/Blog/" target="_blank" rel="noopener noreferrer">Neem kijkje!</a>
-        </figure>
 
-
-        <figure class="projecten--box">
-            <img src="img/projectenimg/muse.png" alt="">
-            <p>Deze website is ontwikkeld door een team en maakt gebruik van HTML, SCSS en JavaScript. 
-                Het project omvat WebVR-technologie, 
-                wat de ervaring naar een hoger niveau tilt. 
-                Deze website heeft een week in een museum tentoongesteld gestaan.
-            </p>
-            <a class="projecten-button" href="https://35229.hosts2.ma-cloud.nl/museweb/index.html" target="_blank" rel="noopener noreferrer">Neem kijkje!</a>
-        </figure>
-
+        </div>
     </section>
 
-    <section class="contact">
+    <section id="section4" class="contact">
         <h2 class="contact--title">Contact</h2>
         <div class="contact-info">
             <div class="contact-details">
                 <h3>Over de Maker</h3>
-                <p>Mijn naam is Jay Jairam, een front-end software-developer student uit Amsterdam. Heb je vragen of wil je meer weten? Neem gerust contact met mij op via onderstaande contactmethoden.</p>
+                <p>Mijn naam is Jay Jairam, een front-end software-developer student uit Amsterdam. Heb je vragen of wil
+                    je meer weten? Neem gerust contact met mij op via onderstaande contactmethoden.</p>
             </div>
             <div class="contact-methods">
                 <div class="contact-method">
@@ -223,17 +278,21 @@
                 <div class="contact-method">
                     <h3>Social Media</h3>
                     <ul>
-                        <li><a href="https://facebook.com/jayjairam" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                        <li><a href="https://twitter.com/jayjairam" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                        <li><a href="https://instagram.com/jayjairam" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                        <li><a href="https://linkedin.com/in/jayjairam" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://facebook.com/jayjairam" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://twitter.com/jayjairam" target="_blank"
+                                rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="https://instagram.com/jayjairam" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://linkedin.com/in/jayjairam" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    
-    
+
+
 </body>
 
 </html>
