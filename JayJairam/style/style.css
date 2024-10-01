@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 .header--name {
-  padding-right: 105rem;
+  padding-right: 117rem;
   font-size: 3rem;
 }
 
@@ -264,22 +264,22 @@ nav a:hover {
   }
 }
 
-.boxexample {
-  position: absolute;
-  top: 200px;
-  width: 13rem;
-  height: 40rem;
-  background: #e6e6e6;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 25%;
-  border:  #f2f2f2 10px double;
-  background-clip: content-box;
+.home--contact{
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color: #333;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 3rem;
   gap: 2rem;
 }
+
+.home--contact a{
+  color: #333;
+  text-decoration: none;
+}
+
 
 
 /* ------------------------------------------------------------- */
@@ -457,62 +457,6 @@ nav a:hover {
 }
 
 
-
-/* ------------------------------------------------------------- */
-/* .projecten{
-  width: 100%;
-  height: 90rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.projecten--title{
-  position: absolute;
-  left: 46%;
-  top: 200%;
-  border: #cc33ff;
-  border-style: outset;
-  border-radius: 1rem;
-  font-size: 5rem;
-}
-
-.projecten--box{
-  width: 40rem;
-  height: 50rem;
-  border-radius: 2rem;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-}
-
-.projecten--box img{
-  width: 100%;
-  height: 50%;
-  object-fit: contain;
-  
-}
-
-.projecten--box p{
-  width: 100%;
-  height: 40%;
-  font-weight: 300;
-}
-
-.projecten-button{
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-  font-size: 1.7rem;
-  background-color: #cc33ff;
-  padding: 14px 14px;
-  border-radius: 2rem;
-} */
-
-
-
-/* ------------------------------------------------------------- */
 
 
 /* Arrow & Marker Placeholders */
@@ -717,6 +661,12 @@ nav a:hover {
   font-weight: 300;
 }
 
+.demo-card .body a{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
 @media (min-width: 1000px) {
   .demo-card .body {
     height: var(--body-height);
@@ -759,83 +709,206 @@ nav a:hover {
 
 
 /* ------------------------------------------------------------- */
-.contact {
-  width: 100%;
-  padding: 2rem;
-  background-color: #f5f5f5;
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
-.contact--title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: #333;
+.contact-info form label {
+  margin: 10px 0 5px;
 }
 
-.contact-info {
+.contact-info form input,
+.contact-info form textarea {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.contact-details h3 {
-  font-size: 2rem;
-  color: #cc33ff;
-  margin-bottom: 1rem;
+.contact-info form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 6rem;
 }
 
-.contact-details p {
-  font-size: 1.4rem;
-  color: #555;
-  margin-bottom: 2rem;
+.contact-info form button:hover {
+  background-color: #0056b3;
 }
 
-.contact-methods {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+
+@media (max-width: 319px) {
+  /* Styles for extra small screens (mobile) */
+  body {
+    font-size: 1.4rem; /* Smaller font for mobile */
+  }
+
+  header {
+    flex-direction: column; /* Stack header items vertically */
+    height: auto; /* Auto height for smaller screens */
+  }
+
+  .header--name {
+    padding-right: 0; /* Remove excessive padding */
+    font-size: 2.5rem; /* Smaller name font */
+  }
+
+  .home-background {
+    height: 40rem; /* Reduced height for mobile */
+  }
+
+  .home--title {
+    font-size: 3rem; /* Smaller title */
+  }
+
+  .home-txt {
+    width: 90%; /* Reduce width */
+    font-size: 1.6rem; /* Smaller font */
+  }
+
+  .home--button {
+    padding: 10px 20px; /* Smaller button padding */
+    font-size: 1.4rem; /* Smaller button font size */
+  }
+
+  .demo-card {
+    max-width: 95%; /* Full width cards */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .AboutMe--title {
+    font-size: 3.5rem; /* Smaller title size */
+  }
+
+  .flipcards {
+    grid-template-columns: 1fr; /* Single column */
+  }
 }
 
-.contact-method {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+@media (min-width: 320px) and (max-width: 479px) {
+  /* Styles for small screens (mobile) */
+  body {
+    font-size: 1.6rem; /* Slightly smaller font */
+  }
+
+  header {
+    height: auto; /* Adjust header height */
+  }
+
+  .home-background {
+    height: 50rem; /* Adjust height */
+  }
+
+  .home--title {
+    font-size: 4rem; /* Smaller title */
+  }
+
+  .home--button {
+    padding: 15px 30px; /* Adjust button padding */
+  }
+
+  .demo-card {
+    max-width: 90%; /* Full width cards */
+  }
+
+  .AboutMe--title {
+    font-size: 4rem; /* Adjust title size */
+  }
+
+  .flipcards {
+    grid-template-columns: 1fr; /* Single column */
+  }
 }
 
-.contact-method h3 {
-  font-size: 1.6rem;
-  color: #cc33ff;
+@media (min-width: 480px) and (max-width: 719px) {
+  /* Styles for medium screens (tablets) */
+  body {
+    font-size: 1.8rem; /* Reset to default font size */
+  }
+
+  header {
+    height: 12rem; /* Adjust height for larger screens */
+  }
+
+  .home--button {
+    font-size: 1.6rem; /* Larger button text */
+    padding: 12px 25px; /* Adjust button padding */
+  }
+
+  .demo-card {
+    max-width: 80%; /* Allow more space */
+  }
+
+  .AboutMe--title {
+    font-size: 4.5rem; /* Adjust title size */
+  }
+
+  .flipcards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
 }
 
-.contact-method p {
-  font-size: 1.4rem;
-  color: #555;
+@media (min-width: 720px) and (max-width: 999px) {
+  /* Styles for larger screens (small laptops) */
+  header {
+    padding: 2rem; /* More padding for larger screens */
+  }
+
+  .home-background {
+    height: 70rem; /* Increase height */
+  }
+
+  .home--title {
+    font-size: 5rem; /* Adjust title size */
+  }
+
+  .demo-card {
+    max-width: 60%; /* Wider cards */
+  }
+
+  .flipcards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
 }
 
-.contact-method a {
-  color: #cc33ff;
-  text-decoration: none;
-}
+@media (min-width: 1000px) {
+  /* Styles for large screens (desktops) */
+  header {
+    height: 12rem; /* Taller header */
+  }
 
-.contact-method a:hover {
-  text-decoration: underline;
-}
+  .home-background {
+    height: 81rem; /* Full height */
+  }
 
-.contact-method ul {
-  list-style: none;
-  padding: 0;
-}
+  .demo-card {
+    max-width: var(--card-width);
+    height: var(--card-height);
+    margin: var(--outer-margin);
+    margin-top: calc(var(--outer-margin) / 2);
+    margin-bottom: calc(var(--outer-margin) / 2);
+  }
 
-.contact-method li {
-  margin-bottom: 0.5rem;
-}
+  .flipcards {
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+  }
 
-.contact-method li a {
-  color: #cc33ff;
-}
-
-.contact-method li a:hover {
-  text-decoration: underline;
+  .demo-card-wrapper {
+    width: var(--container-width);
+    height: var(--container-height);
+  }
 }

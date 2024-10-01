@@ -1,8 +1,7 @@
 function changeLanguage(language) {
-    // This is where you'd load the content in the selected language.
-    // For demonstration, we'll just display an alert.
+
     if (language === 'en') {
-        document.documentElement.lang = 'en'; // Set the lang attribute
+        document.documentElement.lang = 'en'; 
         alert("Website language changed to English!");
     } else if (language === 'es') {
         document.documentElement.lang = 'es';
@@ -12,3 +11,4 @@ function changeLanguage(language) {
         alert("La langue du site a été changée en Français!");
     }
 }
+
