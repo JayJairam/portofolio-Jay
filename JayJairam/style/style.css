@@ -752,19 +752,19 @@ footer {
 
 
 @media (max-width: 319px) {
-  /* Styles for extra small screens (mobile) */
+  
   body {
-    font-size: 1.4rem; /* Smaller font for mobile */
+    font-size: 1.4rem; 
   }
 
   header {
-    flex-direction: column; /* Stack header items vertically */
-    height: auto; /* Auto height for smaller screens */
+    flex-direction: column; 
+    height: auto; 
   }
 
   .header--name {
-    padding-right: 0; /* Remove excessive padding */
-    font-size: 2.5rem; /* Smaller name font */
+    padding-right: 0;
+    font-size: 2.5rem; 
   }
 
   .home-background {
